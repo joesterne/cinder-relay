@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "80b877c0-832c-52f3-a4a0-328872a25fe6",
+  "name": "Walk to The Kennel",
+  "symbol": "bg_road_hearth_den",
+  "tileColors": "",
+  "filename": "road_hearth_den.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

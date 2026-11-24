@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "61eef6a4-aeeb-567d-92f0-b2a606a6656c",
+  "name": "SLAGHORN",
+  "symbol": "bg_ram",
+  "tileColors": "",
+  "filename": "ram.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

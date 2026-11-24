@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "fc4f8889-89ba-5cb7-b1a7-e1749c8ff2d5",
+  "_index": 22,
+  "type": "TOPDOWN",
+  "name": "Walk to Kiln Post",
+  "symbol": "scene_road_yard_kiln",
+  "x": 690,
+  "y": 1160,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "c2c295ac-b308-5ebd-9f07-d705ff7b9692",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "280f9c23-6f59-5ae6-b2a1-a031a7730110"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "9331bbc7-78a6-4298-ab0d-35844eadb021",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "865e7453-7c00-4745-b673-3cb38648b80a",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "0b12efcc-e77a-4600-bca3-04657155ef60",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "603102b1-411c-555e-b004-ed70860a34ad",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "48f22f44-fecb-537f-9a4d-cfcb8affabcd",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "b1acf63a-ecee-542f-a870-6c141a7a75f3",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "a46f1d40-3e6c-5758-bd07-4aae0faa1a28",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 17
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "296e9d1c-c9c9-5ea3-a37e-7d1c577b2946",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f05171d9-5f0b-595e-b26f-96b7b7440e3f",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

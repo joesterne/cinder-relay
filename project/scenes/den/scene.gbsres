@@ -1,0 +1,1291 @@
+{
+  "_resourceType": "scene",
+  "id": "319c5b01-5338-58dd-a9b6-01f7dfc64470",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "THE KENNEL",
+  "symbol": "scene_den",
+  "x": 460,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "916ee92b-29cb-5a2f-abcd-b1ad86601757",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "1814924d-378c-5377-9f06-14a46fb95b4a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "5ef69428-dcbb-4c60-9b68-9e3906d4c12d",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "30",
+        "operator": "==",
+        "comparator": 0
+      },
+      "children": {
+        "true": [
+          {
+            "id": "15960aa5-db24-4f74-a83f-788415d1bbc9",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "30",
+              "operation": "set",
+              "other": "val",
+              "value": 16
+            }
+          },
+          {
+            "id": "febea7ee-a7c2-4743-b8ea-48e18ecf4a8b",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "29",
+              "operation": "set",
+              "other": "val",
+              "value": 3
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "6c9ef55e-91a7-5db4-9b45-5720784f68b2"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      },
+      "id": "2c92981d-7dda-53ed-b0f4-12190859bc04"
+    },
+    {
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "0",
+              "items": 4,
+              "layout": "dialogue",
+              "cancelOnB": true,
+              "cancelOnLastOption": false,
+              "option1": "Active partner",
+              "option2": "Train for 2 scrap",
+              "option3": "Inspect partner",
+              "option4": "Home"
+            },
+            "id": "92f3a338-d3fa-598b-887c-8aa04efae2f8"
+          },
+          {
+            "id": "2452e981-5e72-5448-a50f-ce28cf74b7e4",
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 0
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "893b4f0e-f1f5-51b8-994e-b0c29475b95e",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "28",
+                    "operation": "set",
+                    "other": "val",
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "c70deb39-a358-54cd-8285-38e40f052245",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "a6ba860b-bb4e-560a-9671-776e23dec692",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "down",
+                    "fadeSpeed": 1
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 1
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "0",
+                    "items": 4,
+                    "layout": "dialogue",
+                    "cancelOnB": true,
+                    "cancelOnLastOption": false,
+                    "option1": "Coiljack",
+                    "option2": "Glasswing",
+                    "option3": "Slaghorn",
+                    "option4": "Bramble the dog"
+                  },
+                  "id": "7ee48cd1-5b22-5ef7-979f-9456c1052f18"
+                },
+                {
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "operator": "==",
+                    "comparator": 1
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "19",
+                          "operator": "==",
+                          "comparator": 1
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "5",
+                                "operation": "set",
+                                "other": "val",
+                                "value": 0
+                              },
+                              "id": "635f9328-3ba4-5057-a184-05c1b472250f"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Coiljack\nleads the team."
+                              },
+                              "id": "b508474d-54df-5f2a-aeb5-89a97e975afc"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "No field bond.\nCatch one first."
+                              },
+                              "id": "0057b6bf-af07-5e46-b5ef-d6b59053d558"
+                            }
+                          ]
+                        },
+                        "id": "7480eb68-93b2-521c-ad0e-a2141e4084b1"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "operator": "==",
+                          "comparator": 2
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "22",
+                                "operator": "==",
+                                "comparator": 1
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "5",
+                                      "operation": "set",
+                                      "other": "val",
+                                      "value": 1
+                                    },
+                                    "id": "b2d120b6-f728-53eb-b985-8b7c6fd94182"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": "Glasswing\nleads the team."
+                                    },
+                                    "id": "0202407b-f8c7-515b-b515-538ecfcd5b32"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": "No field bond.\nCatch one first."
+                                    },
+                                    "id": "e5d8005c-be62-5506-a3dc-6f5425fa61f2"
+                                  }
+                                ]
+                              },
+                              "id": "ec91b9a8-e1c9-5ef7-b20d-15178386bede"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "operator": "==",
+                                "comparator": 3
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "25",
+                                      "operator": "==",
+                                      "comparator": 1
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "5",
+                                            "operation": "set",
+                                            "other": "val",
+                                            "value": 2
+                                          },
+                                          "id": "455bacb0-d476-504c-97c9-985a5849d487"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": "Slaghorn\nleads the team."
+                                          },
+                                          "id": "ccbd6ae6-47e4-5702-8881-25f802a75f2c"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": "No field bond.\nCatch one first."
+                                          },
+                                          "id": "e5b5a458-f083-573b-8ca6-97da43201227"
+                                        }
+                                      ]
+                                    },
+                                    "id": "27dd7b2e-cbf5-51bb-9cfe-367b804c5b44"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "0",
+                                      "operator": "==",
+                                      "comparator": 4
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "id": "cd323dff-448b-4f4c-815e-9bc08511585e",
+                                          "command": "EVENT_SWITCH_SCENE",
+                                          "args": {
+                                            "sceneId": "04e146dd-4faa-4c44-b88b-cb230e876837",
+                                            "x": {
+                                              "type": "number",
+                                              "value": 0
+                                            },
+                                            "y": {
+                                              "type": "number",
+                                              "value": 0
+                                            },
+                                            "direction": "down",
+                                            "fadeSpeed": 1
+                                          }
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "5834eef1-7d05-5b5a-bd7e-4c3ebaea341f"
+                                  }
+                                ]
+                              },
+                              "id": "b1468074-4834-5069-957f-196a5392a014"
+                            }
+                          ]
+                        },
+                        "id": "f3d83315-cd2e-51cd-8990-0e509ace9654"
+                      }
+                    ]
+                  },
+                  "id": "add201f8-a4e4-57b7-a93e-cdd99f2b2dab"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "operator": "==",
+                    "comparator": 2
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "0",
+                          "items": 3,
+                          "layout": "dialogue",
+                          "cancelOnB": false,
+                          "cancelOnLastOption": false,
+                          "option1": "Attack drill",
+                          "option2": "Endurance run",
+                          "option3": "Back"
+                        },
+                        "id": "ff23da48-3ec1-512d-a15f-d88f3a157069"
+                      },
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "operator": "==",
+                          "comparator": 1
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "5",
+                                "operator": "==",
+                                "comparator": 0
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "20",
+                                      "operator": ">=",
+                                      "comparator": 12
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": "Training maxed."
+                                          },
+                                          "id": "53ee5c9d-fd47-517d-87c5-9a9854defed6"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "1",
+                                            "operator": ">=",
+                                            "comparator": 2
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "1",
+                                                  "operation": "sub",
+                                                  "other": "val",
+                                                  "value": 2
+                                                },
+                                                "id": "dc4bc33e-0334-57a5-bedb-a2ded68866a4"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "20",
+                                                  "operation": "add",
+                                                  "other": "val",
+                                                  "value": 1
+                                                },
+                                                "id": "b842a4cc-3299-510f-b588-690287967a64"
+                                              },
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Training done.\nAttack +1."
+                                                },
+                                                "id": "d5640e1f-0202-55e7-9394-4b93d341a3ee"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Need 2 scrap."
+                                                },
+                                                "id": "5cb17a83-323d-518d-9ba3-2eff13615b3a"
+                                              }
+                                            ]
+                                          },
+                                          "id": "9497ea0a-e172-5798-9484-5684daf86b9e"
+                                        }
+                                      ]
+                                    },
+                                    "id": "a8532daa-41b6-5144-9d89-c66c84f2b5fd"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "5",
+                                      "operator": "==",
+                                      "comparator": 1
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "23",
+                                            "operator": ">=",
+                                            "comparator": 12
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Training maxed."
+                                                },
+                                                "id": "a660c728-f01a-50c9-a8ab-2fd1cc5965b8"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "1",
+                                                  "operator": ">=",
+                                                  "comparator": 2
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_VARIABLE_MATH",
+                                                      "args": {
+                                                        "vectorX": "1",
+                                                        "operation": "sub",
+                                                        "other": "val",
+                                                        "value": 2
+                                                      },
+                                                      "id": "2f6dd694-eeaf-5640-9ab9-46bd170fd761"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_VARIABLE_MATH",
+                                                      "args": {
+                                                        "vectorX": "23",
+                                                        "operation": "add",
+                                                        "other": "val",
+                                                        "value": 1
+                                                      },
+                                                      "id": "437e15ef-fe0a-5549-a751-a36a35e65021"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Training done.\nAttack +1."
+                                                      },
+                                                      "id": "814f519a-622b-5ae7-bf08-dc29895222dc"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Need 2 scrap."
+                                                      },
+                                                      "id": "8f9e17b7-f1b7-5fa3-aa75-d8acf1b410ba"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "7fd8f8b0-dc1d-5940-b7ce-6ba7f7ca60cd"
+                                              }
+                                            ]
+                                          },
+                                          "id": "cb893748-c9f1-5ceb-9e2d-e5de285a2b67"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "312a2877-ee15-45a6-9389-52508a3a3167",
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "5",
+                                            "operator": "==",
+                                            "comparator": 3
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "29",
+                                                  "operator": ">=",
+                                                  "comparator": 12
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Training maxed."
+                                                      },
+                                                      "id": "5f5ff26c-be97-4add-a5e7-8f88505cc109"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_IF_VALUE",
+                                                      "args": {
+                                                        "variable": "1",
+                                                        "operator": ">=",
+                                                        "comparator": 2
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "1",
+                                                              "operation": "sub",
+                                                              "other": "val",
+                                                              "value": 2
+                                                            },
+                                                            "id": "6d37aa70-4c5f-495e-9f13-6c102d743702"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "29",
+                                                              "operation": "add",
+                                                              "other": "val",
+                                                              "value": 1
+                                                            },
+                                                            "id": "91b0077b-87eb-4e21-9b24-fdad0c35d999"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Training done.\nAttack +1."
+                                                            },
+                                                            "id": "b9bbfd89-b0bf-4288-8465-1d8d0db002f1"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Need 2 scrap."
+                                                            },
+                                                            "id": "6b161fc9-84fd-43f1-8e4f-0f47ab535ad1"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "2ccc4706-5d79-4a2a-8b68-a3e7eac53f67"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "f488b0b4-8211-4308-bebd-e70ca583bb5e"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "26",
+                                                  "operator": ">=",
+                                                  "comparator": 12
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Training maxed."
+                                                      },
+                                                      "id": "11c0bddd-6daa-5990-9ee9-25eb606d0c99"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_IF_VALUE",
+                                                      "args": {
+                                                        "variable": "1",
+                                                        "operator": ">=",
+                                                        "comparator": 2
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "1",
+                                                              "operation": "sub",
+                                                              "other": "val",
+                                                              "value": 2
+                                                            },
+                                                            "id": "d957f992-5a56-5c95-bb6d-17b645461623"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "26",
+                                                              "operation": "add",
+                                                              "other": "val",
+                                                              "value": 1
+                                                            },
+                                                            "id": "a8712995-4369-523b-95d2-f9b22f26ee43"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Training done.\nAttack +1."
+                                                            },
+                                                            "id": "ae80aaf9-92c4-529b-88fb-4eb46acb26c3"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Need 2 scrap."
+                                                            },
+                                                            "id": "7f5da29d-0a74-518c-baac-63233dfce660"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "fc6a2d26-a4c9-51be-9c4d-5926aa103762"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "d9fcede0-9022-5e6a-8356-921d48cbdfdc"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "13e8b6c4-042f-5323-997d-c96c5d6dc78c"
+                                  }
+                                ]
+                              },
+                              "id": "66e5e45d-5c42-5ea3-bfae-2fcd3cc092b8"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "operator": "==",
+                                "comparator": 2
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "5",
+                                      "operator": "==",
+                                      "comparator": 0
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "21",
+                                            "operator": ">=",
+                                            "comparator": 40
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Training maxed."
+                                                },
+                                                "id": "aaf33581-e09e-52eb-b6a5-633d848cb4dd"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "1",
+                                                  "operator": ">=",
+                                                  "comparator": 2
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_VARIABLE_MATH",
+                                                      "args": {
+                                                        "vectorX": "1",
+                                                        "operation": "sub",
+                                                        "other": "val",
+                                                        "value": 2
+                                                      },
+                                                      "id": "07fc0db1-17af-54f9-8d18-9f6057b55c6d"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_VARIABLE_MATH",
+                                                      "args": {
+                                                        "vectorX": "21",
+                                                        "operation": "add",
+                                                        "other": "val",
+                                                        "value": 2
+                                                      },
+                                                      "id": "22560b52-346c-55b2-8d66-534d3e4b20a4"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Training done.\nMax health +2."
+                                                      },
+                                                      "id": "7d7e0ff9-6f9e-5ab9-ae95-363fb9d93722"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Need 2 scrap."
+                                                      },
+                                                      "id": "c11732f6-3364-52b2-9a99-280c589fbd5f"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "666a7a88-ba2b-56b3-b444-880b07fa7971"
+                                              }
+                                            ]
+                                          },
+                                          "id": "207bcabc-c139-5d24-8b28-283054ec40e7"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "5",
+                                            "operator": "==",
+                                            "comparator": 1
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "24",
+                                                  "operator": ">=",
+                                                  "comparator": 40
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": "Training maxed."
+                                                      },
+                                                      "id": "cdd4e8cf-684d-5aee-8b77-2e6234f72dc1"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_IF_VALUE",
+                                                      "args": {
+                                                        "variable": "1",
+                                                        "operator": ">=",
+                                                        "comparator": 2
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "1",
+                                                              "operation": "sub",
+                                                              "other": "val",
+                                                              "value": 2
+                                                            },
+                                                            "id": "12c8ffaa-6bcb-5fb1-8e3d-aad42011f900"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                              "vectorX": "24",
+                                                              "operation": "add",
+                                                              "other": "val",
+                                                              "value": 2
+                                                            },
+                                                            "id": "1b5f7f82-efae-51dc-9f6a-3a360e6ee6f4"
+                                                          },
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Training done.\nMax health +2."
+                                                            },
+                                                            "id": "31301fa4-5c0d-59db-aaa7-10b82e4e10a8"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Need 2 scrap."
+                                                            },
+                                                            "id": "7e1d20af-b2e9-5a60-a6df-ae8e6a7cee4f"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "1bcac2e8-3c54-5719-a5ed-f1a93354ee79"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "fd0509ee-847c-5bd3-bdac-2bdf953b81d0"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "id": "a6e9f2b3-6e57-4e19-af19-72687b945ece",
+                                                "command": "EVENT_IF_VALUE",
+                                                "args": {
+                                                  "variable": "5",
+                                                  "operator": "==",
+                                                  "comparator": 3
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_IF_VALUE",
+                                                      "args": {
+                                                        "variable": "30",
+                                                        "operator": ">=",
+                                                        "comparator": 40
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Training maxed."
+                                                            },
+                                                            "id": "5989ccbf-5283-45db-9128-c6fa22fc3499"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                              "variable": "1",
+                                                              "operator": ">=",
+                                                              "comparator": 2
+                                                            },
+                                                            "children": {
+                                                              "true": [
+                                                                {
+                                                                  "command": "EVENT_VARIABLE_MATH",
+                                                                  "args": {
+                                                                    "vectorX": "1",
+                                                                    "operation": "sub",
+                                                                    "other": "val",
+                                                                    "value": 2
+                                                                  },
+                                                                  "id": "1be3e953-498e-4160-aacc-44a58ac29edc"
+                                                                },
+                                                                {
+                                                                  "command": "EVENT_VARIABLE_MATH",
+                                                                  "args": {
+                                                                    "vectorX": "30",
+                                                                    "operation": "add",
+                                                                    "other": "val",
+                                                                    "value": 2
+                                                                  },
+                                                                  "id": "039538d2-5f2a-4b2f-a9c4-b932cd1f9a4d"
+                                                                },
+                                                                {
+                                                                  "command": "EVENT_TEXT",
+                                                                  "args": {
+                                                                    "text": "Training done.\nMax health +2."
+                                                                  },
+                                                                  "id": "ad4e6413-9d34-4219-8999-074ec4575f57"
+                                                                }
+                                                              ],
+                                                              "false": [
+                                                                {
+                                                                  "command": "EVENT_TEXT",
+                                                                  "args": {
+                                                                    "text": "Need 2 scrap."
+                                                                  },
+                                                                  "id": "5fe7e4f6-f198-4c94-83d3-e433d7a34763"
+                                                                }
+                                                              ]
+                                                            },
+                                                            "id": "b831065a-066f-44d7-ab01-38047c294d16"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "9ef9d0aa-3c13-4b47-92e2-a7dd8cd2ec16"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_IF_VALUE",
+                                                      "args": {
+                                                        "variable": "27",
+                                                        "operator": ">=",
+                                                        "comparator": 40
+                                                      },
+                                                      "children": {
+                                                        "true": [
+                                                          {
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                              "text": "Training maxed."
+                                                            },
+                                                            "id": "edaeab45-c46f-5bb5-a77b-0336cb939c1f"
+                                                          }
+                                                        ],
+                                                        "false": [
+                                                          {
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                              "variable": "1",
+                                                              "operator": ">=",
+                                                              "comparator": 2
+                                                            },
+                                                            "children": {
+                                                              "true": [
+                                                                {
+                                                                  "command": "EVENT_VARIABLE_MATH",
+                                                                  "args": {
+                                                                    "vectorX": "1",
+                                                                    "operation": "sub",
+                                                                    "other": "val",
+                                                                    "value": 2
+                                                                  },
+                                                                  "id": "0726bd5d-3d45-5197-868a-5cd95601505d"
+                                                                },
+                                                                {
+                                                                  "command": "EVENT_VARIABLE_MATH",
+                                                                  "args": {
+                                                                    "vectorX": "27",
+                                                                    "operation": "add",
+                                                                    "other": "val",
+                                                                    "value": 2
+                                                                  },
+                                                                  "id": "431e831d-f417-550a-bcc2-b649eada2daa"
+                                                                },
+                                                                {
+                                                                  "command": "EVENT_TEXT",
+                                                                  "args": {
+                                                                    "text": "Training done.\nMax health +2."
+                                                                  },
+                                                                  "id": "1551314d-9392-59ec-8368-b4247bb19886"
+                                                                }
+                                                              ],
+                                                              "false": [
+                                                                {
+                                                                  "command": "EVENT_TEXT",
+                                                                  "args": {
+                                                                    "text": "Need 2 scrap."
+                                                                  },
+                                                                  "id": "47c29b54-4c56-5697-96df-130b627a5caf"
+                                                                }
+                                                              ]
+                                                            },
+                                                            "id": "5829c636-fe50-56ac-8999-01b9b2711875"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "id": "aa35e286-f49f-5145-a7cc-13b0592710ef"
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "id": "e2303fb4-98b2-585b-81c6-3c210e7f7495"
+                                        }
+                                      ]
+                                    },
+                                    "id": "aef6db53-98d4-54f5-ba64-7ba5081a6419"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "0",
+                                      "operator": "==",
+                                      "comparator": 3
+                                    },
+                                    "children": {
+                                      "true": [],
+                                      "false": []
+                                    },
+                                    "id": "f10955d4-0423-5cef-bcc5-c0709f9d2662"
+                                  }
+                                ]
+                              },
+                              "id": "199dfa46-a51c-596d-a051-209a5f86ee86"
+                            }
+                          ]
+                        },
+                        "id": "578b2adb-fc6c-5102-a42d-2ecb6e82d513"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "operator": "==",
+                          "comparator": 3
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "5",
+                                "operator": "==",
+                                "comparator": 0
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "17",
+                                      "operation": "set",
+                                      "other": "var",
+                                      "vectorY": "21"
+                                    },
+                                    "id": "11f3b50c-0734-5f8e-9d81-9dd882a5e7dd"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "18",
+                                      "operation": "set",
+                                      "other": "var",
+                                      "vectorY": "20"
+                                    },
+                                    "id": "a25afa86-b419-5438-8cc8-52567d7b5b9b"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": "Coiljack\nATK $18$  HP $17$"
+                                    },
+                                    "id": "8a8da4e6-17ef-5201-a747-0cc8fc1c287b"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                      "variable": "5",
+                                      "operator": "==",
+                                      "comparator": 1
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "17",
+                                            "operation": "set",
+                                            "other": "var",
+                                            "vectorY": "24"
+                                          },
+                                          "id": "980c7b14-4e4e-5a4b-94c1-ed63e41bb9df"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "18",
+                                            "operation": "set",
+                                            "other": "var",
+                                            "vectorY": "23"
+                                          },
+                                          "id": "47332b17-ab0f-5368-b60e-c20efcc8e773"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": "Glasswing\nATK $18$  HP $17$"
+                                          },
+                                          "id": "2932b7fb-e5e2-5740-8180-6ae3b785a290"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "75cd2da8-d2fa-40de-a273-99aa4faaf2fd",
+                                          "command": "EVENT_IF_VALUE",
+                                          "args": {
+                                            "variable": "5",
+                                            "operator": "==",
+                                            "comparator": 3
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "17",
+                                                  "operation": "set",
+                                                  "other": "var",
+                                                  "vectorY": "30"
+                                                },
+                                                "id": "9384d997-dd23-4b9e-b0bf-5fc28889669a"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "18",
+                                                  "operation": "set",
+                                                  "other": "var",
+                                                  "vectorY": "29"
+                                                },
+                                                "id": "033431f3-3d56-45e5-9d5d-03bfff1c979f"
+                                              },
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Bramble\nATK $18$  HP $17$"
+                                                },
+                                                "id": "fc99fdc9-993b-43de-a64a-392f6f9978d9"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "17",
+                                                  "operation": "set",
+                                                  "other": "var",
+                                                  "vectorY": "27"
+                                                },
+                                                "id": "470e87dd-c16e-523d-b23d-12e12c6a6d7a"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "18",
+                                                  "operation": "set",
+                                                  "other": "var",
+                                                  "vectorY": "26"
+                                                },
+                                                "id": "386a4faa-727f-5503-8041-09852822e107"
+                                              },
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": "Slaghorn\nATK $18$  HP $17$"
+                                                },
+                                                "id": "fdce02a5-f5f6-5de6-82a1-01c30eb0f785"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "16ce7d81-5f93-564f-a5fa-e36fd866b3f6"
+                                  }
+                                ]
+                              },
+                              "id": "f30a845c-29b2-5a69-b541-f516f590e61d"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "operator": "==",
+                                "comparator": 4
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "e9ef94b2-dedd-5594-a90f-5876a5f247ff",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 17
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 13
+                                      },
+                                      "direction": "left",
+                                      "fadeSpeed": 1
+                                    },
+                                    "id": "a89b982d-4353-5f15-aab9-70c5f0d5a7f2"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "a4bf8f56-6ca0-5204-bb73-578cd042f604"
+                            }
+                          ]
+                        },
+                        "id": "39cd1945-8577-5be3-b252-9b411371592b"
+                      }
+                    ]
+                  },
+                  "id": "bab6f159-47af-5726-b499-a45c94067b43"
+                }
+              ]
+            },
+            "id": "a08903b2-191b-5d33-b5f7-b15ba24abe5e"
+          }
+        ]
+      },
+      "id": "796a1a50-769b-5d10-8ba7-728c6bce0ea4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

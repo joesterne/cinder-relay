@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3db2bdef-5aa0-5595-8572-90668d5acfc7",
+  "name": "Walk to Hearth Well",
+  "symbol": "bg_road_yard_hearth",
+  "tileColors": "",
+  "filename": "road_yard_hearth.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

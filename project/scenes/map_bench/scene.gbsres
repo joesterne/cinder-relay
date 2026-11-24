@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "bfbdfa3d-c2ee-5e6e-bfaf-afecffc39251",
+  "_index": 29,
+  "type": "TOPDOWN",
+  "name": "Valley Map / THE WORKBENCH",
+  "symbol": "scene_map_bench",
+  "x": 460,
+  "y": 1770,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "28975a6c-1443-515c-bee9-cab194dfa6d8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "976784be-43e4-5c1c-821d-2a85390c4e9a",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "6afa6948-1538-567f-b18f-9b2618b85c29",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "681d7d35-0596-53b1-9c0d-05c5eb18da4c",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "db68a7b2-ece1-5de6-b42f-6372c3e683c9",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "58094402-01d7-5d91-9151-91b2562e25b3",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "ee7ee74d-3410-5a12-bc8e-0be1a1638110",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f58e6a33-e3f6-5b3b-b883-0e639dbd9f1f",
+  "name": "Relay Valley / kiln",
+  "symbol": "bg_map_kiln",
+  "tileColors": "",
+  "filename": "map_kiln.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

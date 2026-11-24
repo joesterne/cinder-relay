@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "5d719265-39df-52dc-9d6d-975fa8d72eb1",
+  "name": "SALT SPIRE",
+  "symbol": "bg_spire",
+  "tileColors": "",
+  "filename": "spire.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

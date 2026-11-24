@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "8a01544a-607a-5d20-b254-3b5b5fb8903f",
+  "_index": 25,
+  "type": "TOPDOWN",
+  "name": "Valley Map / KILN POST",
+  "symbol": "scene_map_kiln",
+  "x": 460,
+  "y": 1550,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f58e6a33-e3f6-5b3b-b883-0e639dbd9f1f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "6939f02e-eaec-58e6-9e70-573f9b9ee347",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "14d40a67-0bb1-5991-8b9c-b4b40cdcf220",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "ccdf7e4b-8724-5dc2-86a9-61b80505af7a",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "cdad8af7-5279-548a-a080-0d16cef45e43",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "4685d119-9697-5fd1-b9bf-31f418fbe396",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "666257bf-ea8b-5d02-9896-36ed346ce649",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

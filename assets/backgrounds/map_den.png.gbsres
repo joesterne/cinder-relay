@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3f48f05f-d695-5c65-bb89-7cef2bd338be",
+  "name": "Relay Valley / den",
+  "symbol": "bg_map_den",
+  "tileColors": "",
+  "filename": "map_den.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

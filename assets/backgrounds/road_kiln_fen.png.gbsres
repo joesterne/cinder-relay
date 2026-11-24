@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "0a662522-0a82-575e-9df6-13489b94e083",
+  "name": "Walk to Glass Marsh",
+  "symbol": "bg_road_kiln_fen",
+  "tileColors": "",
+  "filename": "road_kiln_fen.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

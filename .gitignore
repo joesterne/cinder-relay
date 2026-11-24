@@ -1,0 +1,7 @@
+.DS_Store
+/artifacts/
+/save-states/
+/build/*
+!/build/Cinder Relay.gbc
+*.ram
+*.sav

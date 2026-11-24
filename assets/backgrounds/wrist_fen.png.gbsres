@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9a763751-057e-5aba-98db-7666d78cff8f",
+  "name": "Wrist terminal / fen",
+  "symbol": "bg_wrist_fen",
+  "tileColors": "00154+022f+016+02e+016+02e+016+02e+016+0293+",
+  "filename": "wrist_fen.png",
+  "width": 20,
+  "height": 30,
+  "imageWidth": 160,
+  "imageHeight": 240,
+  "autoColor": false
+}

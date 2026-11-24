@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "06ce8da4-904c-5094-98fe-b55080aeb544",
+  "name": "Walk to Hearth Well",
+  "symbol": "bg_road_bench_hearth",
+  "tileColors": "",
+  "filename": "road_bench_hearth.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

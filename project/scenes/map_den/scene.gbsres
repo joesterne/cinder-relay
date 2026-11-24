@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "0bafdbf5-4bf8-547b-8b83-c38d438167fa",
+  "_index": 28,
+  "type": "TOPDOWN",
+  "name": "Valley Map / THE KENNEL",
+  "symbol": "scene_map_den",
+  "x": 230,
+  "y": 1770,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "3f48f05f-d695-5c65-bb89-7cef2bd338be",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "804ebfb7-cf89-5fd8-bb75-90dc8095ce1b",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "932d49fa-ca69-5329-a658-bca2563930f5",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "56d34ae0-e8f8-5a53-b8bb-de0dab19b348",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "be36f568-8399-5772-b9d3-069e8ab193f9",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "4a6bdbf7-bd17-5cd1-a01f-a17fb5b1211d",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a6ba860b-bb4e-560a-9671-776e23dec692",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

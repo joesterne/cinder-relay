@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "fb87cb4b-8e1b-5a10-a88f-47e1a7e41231",
+  "name": "Walk to The Switchyard",
+  "symbol": "bg_road_kiln_yard",
+  "tileColors": "",
+  "filename": "road_kiln_yard.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

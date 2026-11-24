@@ -1,0 +1,186 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "choice",
+      "symbol": "var_choice"
+    },
+    {
+      "id": "1",
+      "name": "scrap",
+      "symbol": "var_scrap"
+    },
+    {
+      "id": "2",
+      "name": "loops",
+      "symbol": "var_loops"
+    },
+    {
+      "id": "3",
+      "name": "patches",
+      "symbol": "var_patches"
+    },
+    {
+      "id": "4",
+      "name": "cores",
+      "symbol": "var_cores"
+    },
+    {
+      "id": "5",
+      "name": "lead",
+      "symbol": "var_lead"
+    },
+    {
+      "id": "6",
+      "name": "foeHP",
+      "symbol": "var_foehp"
+    },
+    {
+      "id": "7",
+      "name": "myHP",
+      "symbol": "var_myhp"
+    },
+    {
+      "id": "8",
+      "name": "damage",
+      "symbol": "var_damage"
+    },
+    {
+      "id": "9",
+      "name": "charge",
+      "symbol": "var_charge"
+    },
+    {
+      "id": "10",
+      "name": "heavy",
+      "symbol": "var_heavy"
+    },
+    {
+      "id": "11",
+      "name": "rival",
+      "symbol": "var_rival"
+    },
+    {
+      "id": "12",
+      "name": "route",
+      "symbol": "var_route"
+    },
+    {
+      "id": "13",
+      "name": "kilnFlag",
+      "symbol": "var_kilnflag"
+    },
+    {
+      "id": "14",
+      "name": "spireFlag",
+      "symbol": "var_spireflag"
+    },
+    {
+      "id": "15",
+      "name": "salvage",
+      "symbol": "var_salvage"
+    },
+    {
+      "id": "16",
+      "name": "pick",
+      "symbol": "var_pick"
+    },
+    {
+      "id": "17",
+      "name": "cap",
+      "symbol": "var_cap"
+    },
+    {
+      "id": "18",
+      "name": "power",
+      "symbol": "var_power"
+    },
+    {
+      "id": "19",
+      "name": "jackOwned",
+      "symbol": "var_jackowned"
+    },
+    {
+      "id": "20",
+      "name": "jackAtk",
+      "symbol": "var_jackatk"
+    },
+    {
+      "id": "21",
+      "name": "jackHP",
+      "symbol": "var_jackhp"
+    },
+    {
+      "id": "22",
+      "name": "mothOwned",
+      "symbol": "var_mothowned"
+    },
+    {
+      "id": "23",
+      "name": "mothAtk",
+      "symbol": "var_mothatk"
+    },
+    {
+      "id": "24",
+      "name": "mothHP",
+      "symbol": "var_mothhp"
+    },
+    {
+      "id": "25",
+      "name": "ramOwned",
+      "symbol": "var_ramowned"
+    },
+    {
+      "id": "26",
+      "name": "ramAtk",
+      "symbol": "var_ramatk"
+    },
+    {
+      "id": "27",
+      "name": "ramHP",
+      "symbol": "var_ramhp"
+    },
+    {
+      "id": "28",
+      "name": "Lower wrist unit",
+      "symbol": "var_lower_wrist"
+    },
+    {
+      "id": "29",
+      "name": "brambleAtk",
+      "symbol": "var_brambleatk"
+    },
+    {
+      "id": "30",
+      "name": "brambleHP",
+      "symbol": "var_bramblehp"
+    },
+    {
+      "id": "31",
+      "name": "Player level",
+      "symbol": "var_player_level"
+    },
+    {
+      "id": "32",
+      "name": "Player XP",
+      "symbol": "var_player_xp"
+    },
+    {
+      "id": "33",
+      "name": "Next level XP",
+      "symbol": "var_next_level_xp"
+    },
+    {
+      "id": "34",
+      "name": "XP award",
+      "symbol": "var_xp_award"
+    },
+    {
+      "id": "35",
+      "name": "Field kit healing",
+      "symbol": "var_field_kit_healing"
+    }
+  ],
+  "constants": []
+}

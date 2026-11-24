@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "916ee92b-29cb-5a2f-abcd-b1ad86601757",
+  "name": "THE KENNEL",
+  "symbol": "bg_den",
+  "tileColors": "",
+  "filename": "den.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

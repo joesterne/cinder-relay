@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d74b9e33-72a1-58d6-aad2-e0df1937f7b6",
+  "name": "COILJACK",
+  "symbol": "bg_jack",
+  "tileColors": "",
+  "filename": "jack.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

@@ -1,0 +1,65 @@
+{
+  "_resourceType": "script",
+  "id": "72617074-6542-496d-aa38-5af9df6616ff",
+  "name": "Initialize Player Level",
+  "symbol": "script_initialize_player_level",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "8c2eab41-3e3e-4570-903d-9d5b9aac7166",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "31",
+        "operator": "==",
+        "comparator": 0
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d85cd1c8-0893-47b4-95ab-660319576195",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "31",
+              "operation": "set",
+              "other": "val",
+              "value": 1
+            }
+          },
+          {
+            "id": "b6908ba8-4827-45d3-a8e3-0d0655e35ea2",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "32",
+              "operation": "set",
+              "other": "val",
+              "value": 0
+            }
+          },
+          {
+            "id": "7438b158-320c-4338-a3fc-30799413e8f3",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "33",
+              "operation": "set",
+              "other": "val",
+              "value": 8
+            }
+          },
+          {
+            "id": "3074beae-e02c-4658-b17a-fa5e5f90a435",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "35",
+              "operation": "set",
+              "other": "val",
+              "value": 8
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "2e88860d-6c10-586a-99af-3150bffd359c",
+  "name": "Relay Valley / hearth",
+  "symbol": "bg_map_hearth",
+  "tileColors": "",
+  "filename": "map_hearth.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

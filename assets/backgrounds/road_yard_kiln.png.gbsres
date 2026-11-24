@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "c2c295ac-b308-5ebd-9f07-d705ff7b9692",
+  "name": "Walk to Kiln Post",
+  "symbol": "bg_road_yard_kiln",
+  "tileColors": "",
+  "filename": "road_yard_kiln.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

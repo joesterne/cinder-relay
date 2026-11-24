@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "b05f4b0f-0edc-541c-9e66-4c73d14e446e",
+  "_index": 23,
+  "type": "TOPDOWN",
+  "name": "Valley Map / HEARTH WELL",
+  "symbol": "scene_map_hearth",
+  "x": 0,
+  "y": 1550,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "2e88860d-6c10-586a-99af-3150bffd359c",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "5e3df467-1390-58e2-87d9-7871ab134204",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "1a2699a0-08a2-5879-9487-4960fe3354f8",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "dfae1df1-bea1-5c00-9fa9-966c2046fb96",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "71c87b3f-2b0a-529d-82e3-45ef90cca593",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "aa3c784e-85a5-5660-95e6-fdf7b260ac11",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6ac1f232-7ce3-56c6-9848-fceb77f24e6c",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

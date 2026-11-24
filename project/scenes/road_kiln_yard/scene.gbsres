@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "1a9bb594-316e-572b-8726-9df794767984",
+  "_index": 19,
+  "type": "TOPDOWN",
+  "name": "Walk to The Switchyard",
+  "symbol": "scene_road_kiln_yard",
+  "x": 0,
+  "y": 1160,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "fb87cb4b-8e1b-5a10-a88f-47e1a7e41231",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "ba9a0a4c-c014-510a-8450-2c3eb26a1358"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "4a434dd4-196f-4ffa-9c82-bd38a9e2647c",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "5efc2998-409d-4210-b21e-d0e9100c618c",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "25b8acb1-afe1-4c3a-be33-c9cbb81d5f31",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "7d8c8f08-f3e2-50ba-bee8-ecc85866adea",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "fa22921f-1294-5f4e-ae31-dc20b393e0cd",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "60e0c568-6fbe-5c33-ad9c-dfb1270ff2a5",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "b1f23d03-54b9-574b-a46e-ca25bb451572",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "027c547c-4ed8-50c0-883a-aa4cac3836bb",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f130c7e4-c61a-5f55-b33f-cc470aa551b6",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e94ebe53-e154-5b58-837c-ef11f9e0b2bf",
+  "name": "Walk to The Workbench",
+  "symbol": "bg_road_hearth_bench",
+  "tileColors": "",
+  "filename": "road_hearth_bench.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

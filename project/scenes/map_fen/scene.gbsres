@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "48077b53-9233-5df8-9f66-305741572c3f",
+  "_index": 26,
+  "type": "TOPDOWN",
+  "name": "Valley Map / GLASS MARSH",
+  "symbol": "scene_map_fen",
+  "x": 690,
+  "y": 1550,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8f15087e-48bf-5d22-a911-8972ca578bab",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "176e30ec-c483-5e2d-bcb0-c3f2513067db",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "eff33918-5522-5326-acd9-36c2811a2d74",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "0e83517b-973f-5d00-b97f-1afec1cb8b81",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "b29106dd-250d-59ec-8572-576078c2a5fa",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "3d66e42a-8c9d-59f9-94b3-6fcf6eb25772",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "16494813-4714-53ac-92f6-ca3bbdddaba0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

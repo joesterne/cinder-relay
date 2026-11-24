@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ae2d4cfa-a494-50d5-9a4c-209eadc3176a",
+  "name": "Wrist terminal / yard",
+  "symbol": "bg_wrist_yard",
+  "tileColors": "00154+022f+016+02e+016+02e+016+02e+016+0293+",
+  "filename": "wrist_yard.png",
+  "width": 20,
+  "height": 30,
+  "imageWidth": 160,
+  "imageHeight": 240,
+  "autoColor": false
+}

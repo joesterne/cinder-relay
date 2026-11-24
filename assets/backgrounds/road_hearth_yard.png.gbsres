@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4c5188ff-04b4-5c91-b3ae-59312506c408",
+  "name": "Walk to The Switchyard",
+  "symbol": "bg_road_hearth_yard",
+  "tileColors": "",
+  "filename": "road_hearth_yard.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

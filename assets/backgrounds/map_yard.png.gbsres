@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4179c70f-25df-501b-8487-90b24c78c195",
+  "name": "Relay Valley / yard",
+  "symbol": "bg_map_yard",
+  "tileColors": "",
+  "filename": "map_yard.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

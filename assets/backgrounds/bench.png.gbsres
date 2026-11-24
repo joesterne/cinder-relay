@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "cb104413-0d65-5fbf-bbb4-5d70882a63ad",
+  "name": "THE WORKBENCH",
+  "symbol": "bg_bench",
+  "tileColors": "",
+  "filename": "bench.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

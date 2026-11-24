@@ -1,0 +1,231 @@
+{
+  "_resourceType": "scene",
+  "id": "12f07015-0a42-504a-8d39-3f689e13ad3a",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "CINDER RELAY",
+  "symbol": "scene_title",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "b7b074db-e0d0-5902-bfd7-a3854a402edd",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c9b46b4a-e9d7-5201-91c6-2cb28fe6828c"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "73ddcc1f-dc04-5b60-abf2-a43d0f99a630"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      },
+      "id": "802430f0-d21b-5474-9eaa-e044894c0efc"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "start"
+        ]
+      },
+      "id": "69efe48f-8fef-535b-bdb8-eecb3141122b"
+    },
+    {
+      "command": "EVENT_IF_SAVED_DATA",
+      "args": {
+        "saveSlot": 0
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "0",
+              "items": 2,
+              "layout": "dialogue",
+              "cancelOnB": false,
+              "cancelOnLastOption": false,
+              "option1": "Continue",
+              "option2": "New expedition"
+            },
+            "id": "1dae486b-894b-5816-998e-a42dcba85b90"
+          },
+          {
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 1
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_LOAD_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "id": "c130da16-3e59-5cc8-8d6e-c2eab10a6f4f"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "operator": "==",
+                    "comparator": 2
+                  },
+                  "children": {
+                    "true": [],
+                    "false": []
+                  },
+                  "id": "08f3ecad-f6a5-5a08-8543-77810a04e8fc"
+                }
+              ]
+            },
+            "id": "9d17f027-c7b1-59d0-bb26-6ca545fd22a3"
+          }
+        ],
+        "false": []
+      },
+      "id": "a88a428a-e274-5fc7-892d-f21fc20a134c"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "1",
+        "operation": "set",
+        "other": "val",
+        "value": 2
+      },
+      "id": "8a78cc6a-0a7b-5a9d-8601-994e97bb1e05"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "2",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      },
+      "id": "682fe38d-31d3-5dee-a373-df6f27f9a4a6"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "19",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      },
+      "id": "f116ee24-1022-5796-a0b2-be2a4b1f161d"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "20",
+        "operation": "set",
+        "other": "val",
+        "value": 3
+      },
+      "id": "9ca6466a-fc4e-5fff-9f80-20460f4a7b2f"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "21",
+        "operation": "set",
+        "other": "val",
+        "value": 14
+      },
+      "id": "efeafba1-ee15-5d00-90cf-620e889b4bb3"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "23",
+        "operation": "set",
+        "other": "val",
+        "value": 4
+      },
+      "id": "4f78c6de-7ff2-57e8-a514-e02e112021a6"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "24",
+        "operation": "set",
+        "other": "val",
+        "value": 11
+      },
+      "id": "6fc8e981-0f32-569c-9bf3-941842c2abaa"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "26",
+        "operation": "set",
+        "other": "val",
+        "value": 2
+      },
+      "id": "77a4e1a1-4fac-5006-9dce-870856af7147"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "27",
+        "operation": "set",
+        "other": "val",
+        "value": 20
+      },
+      "id": "5fc623f5-e861-5b10-9333-0537f9cc2512"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Our well is dry.\nTwo silent relays\nfeed this valley."
+      },
+      "id": "0884852f-793e-54f8-8217-edc370d48b4d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Your Coiljack\nknows the rails.\nFind Kiln Post."
+      },
+      "id": "a5d46d4a-6df3-5677-9f35-fbc349c3494e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6c35d04c-e1e4-52fe-aa6f-4070a40c5e72",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      },
+      "id": "ac6e6ba4-123d-5022-8183-f0210109f0ce"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

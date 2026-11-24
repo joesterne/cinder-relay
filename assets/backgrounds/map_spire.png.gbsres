@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "96ba9015-e6bb-5536-95a0-019ae1caf8ce",
+  "name": "Relay Valley / spire",
+  "symbol": "bg_map_spire",
+  "tileColors": "",
+  "filename": "map_spire.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

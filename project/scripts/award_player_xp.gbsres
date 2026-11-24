@@ -1,0 +1,141 @@
+{
+  "_resourceType": "script",
+  "id": "93ef826e-79d5-429e-bfdc-ba13a3f6d837",
+  "name": "Award Player Xp",
+  "symbol": "script_award_player_xp",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "b47dbfd8-52ca-4dd4-9f73-83ef6a9fe8f1",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "72617074-6542-496d-aa38-5af9df6616ff"
+      }
+    },
+    {
+      "id": "5a038746-2a48-49e0-bee3-c216c18b3518",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "31",
+        "operator": "<",
+        "comparator": 10
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f016137c-9210-4c63-99e3-98b3d153e942",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "32",
+              "operation": "add",
+              "other": "var",
+              "vectorY": "34"
+            }
+          },
+          {
+            "id": "35be979c-2116-4ee6-b202-593e0a47ff35",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Player XP +$34$"
+            }
+          },
+          {
+            "id": "95cb8fff-7f91-4c2c-9296-24681c032f71",
+            "command": "EVENT_IF_VALUE_COMPARE",
+            "args": {
+              "vectorX": "32",
+              "operator": ">=",
+              "vectorY": "33"
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "a3cd7aa5-d2e6-46d2-850e-95300c6b1fe1",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "32",
+                    "operation": "sub",
+                    "other": "var",
+                    "vectorY": "33"
+                  }
+                },
+                {
+                  "id": "cf5a29d8-05df-4837-9ac9-3056565d207e",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "31",
+                    "operation": "add",
+                    "other": "val",
+                    "value": 1
+                  }
+                },
+                {
+                  "id": "4c1d091f-1423-4d19-a451-c598b8a9d8a2",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "35",
+                    "operation": "add",
+                    "other": "val",
+                    "value": 1
+                  }
+                },
+                {
+                  "id": "d6e4d7ab-ef8f-40e6-b50a-77b924ff8743",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "33",
+                    "operation": "add",
+                    "other": "val",
+                    "value": 4
+                  }
+                },
+                {
+                  "id": "0632911e-78c5-40a0-a8ed-e2b789382487",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Player level $31$!\nField kits now\nheal $35$ HP."
+                  }
+                },
+                {
+                  "id": "adae06b1-d1b7-418c-babc-977046828a92",
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "31",
+                    "operator": "==",
+                    "comparator": 10
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "4c223a1e-2c2f-4861-89a8-9d2ecad3ab23",
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "32",
+                          "operation": "set",
+                          "other": "val",
+                          "value": 0
+                        }
+                      },
+                      {
+                        "id": "39d15dd3-a4d1-410f-bf6d-e06e7609bf8c",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Maximum level!"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ]
+}

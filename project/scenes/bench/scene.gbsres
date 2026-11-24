@@ -1,0 +1,328 @@
+{
+  "_resourceType": "scene",
+  "id": "80d3f631-887d-5137-9a22-5a6bf65cb2e8",
+  "_index": 7,
+  "type": "TOPDOWN",
+  "name": "THE WORKBENCH",
+  "symbol": "scene_bench",
+  "x": 690,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "cb104413-0d65-5fbf-bbb4-5d70882a63ad",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "9a02aada-1685-5445-8f70-2bc97fd1d2eb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "51872e29-f426-5e3f-9044-afc11530ac35"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      },
+      "id": "422441fa-7137-538c-9c3f-a92ebf2efd7f"
+    },
+    {
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "0",
+              "items": 4,
+              "layout": "dialogue",
+              "cancelOnB": true,
+              "cancelOnLastOption": false,
+              "option1": "Loop  /  2 scrap",
+              "option2": "Kit   /  3 scrap",
+              "option3": "Recycle core",
+              "option4": "Home"
+            },
+            "id": "3219e5d6-f51b-5c7d-b0f9-e72d527d653a"
+          },
+          {
+            "id": "ff18bddd-1c5a-51bc-b96b-29bb919a7825",
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 0
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "c1f31ff8-eb9d-5eee-b433-8929d64c5922",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "28",
+                    "operation": "set",
+                    "other": "val",
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "9ba1c53d-41a1-5c27-a918-ed72ed26d6bf",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "ee7ee74d-3410-5a12-bc8e-0be1a1638110",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "down",
+                    "fadeSpeed": 1
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 1
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "operator": ">=",
+                    "comparator": 2
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "1",
+                          "operation": "sub",
+                          "other": "val",
+                          "value": 2
+                        },
+                        "id": "5a798803-575a-5955-a230-936165c17dbf"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "2",
+                          "operation": "add",
+                          "other": "val",
+                          "value": 1
+                        },
+                        "id": "680ad440-958b-5729-8546-9195c1ae5000"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Packed one loop."
+                        },
+                        "id": "8141aad3-5a44-5b86-b00f-b5fec811369e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Short on scrap."
+                        },
+                        "id": "77c55de6-1882-5040-bfed-114d2c9a34bb"
+                      }
+                    ]
+                  },
+                  "id": "7d90c366-216b-5d0c-b883-2008c9099997"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "0",
+                    "operator": "==",
+                    "comparator": 2
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "1",
+                          "operator": ">=",
+                          "comparator": 3
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "1",
+                                "operation": "sub",
+                                "other": "val",
+                                "value": 3
+                              },
+                              "id": "78fb788d-a542-59c2-baba-a0818b109f56"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "3",
+                                "operation": "add",
+                                "other": "val",
+                                "value": 1
+                              },
+                              "id": "a060e438-20f2-5d0b-81fa-fcff431910e2"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Packed one kit."
+                              },
+                              "id": "d90ff117-b665-512c-9065-c16278a575f8"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Short on scrap."
+                              },
+                              "id": "94eec5db-9be6-5ffb-8087-59860d7f98b3"
+                            }
+                          ]
+                        },
+                        "id": "c6d247b1-da9e-5f77-b5d2-5108c3eb7f04"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "operator": "==",
+                          "comparator": 3
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "4",
+                                "operator": ">=",
+                                "comparator": 1
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "4",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": 1
+                                    },
+                                    "id": "814551d5-6ab2-5629-a3d2-34cd40a6fea1"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "1",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": 4
+                                    },
+                                    "id": "2d7b4ad2-7e08-5406-9f81-b008a86bc44d"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": "Core stripped.\nGained 4 scrap."
+                                    },
+                                    "id": "7e2c0ace-6e1d-5563-9d3a-5cd94be086bf"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": "Find old cores\nat salvage sites."
+                                    },
+                                    "id": "eec170f2-7395-5520-a778-cffb17f2199a"
+                                  }
+                                ]
+                              },
+                              "id": "2cff4158-d2f8-56d1-b29a-bc9f041acca5"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "operator": "==",
+                                "comparator": 4
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                      "sceneId": "d467682a-041a-509c-b46a-09b82e16807a",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 17
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 13
+                                      },
+                                      "direction": "left",
+                                      "fadeSpeed": 1
+                                    },
+                                    "id": "439e2a5e-aded-5763-ae0c-4256a6d2e8d0"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "c2e80c51-ae0e-5d7d-947f-29a1dd2e4185"
+                            }
+                          ]
+                        },
+                        "id": "c5ec61b4-bbe2-52b8-9392-29b0eb01485d"
+                      }
+                    ]
+                  },
+                  "id": "d435c8ee-2684-5b68-8ecf-bd73b22bac6a"
+                }
+              ]
+            },
+            "id": "e3b705e8-26ce-504d-a616-dfd8cb006331"
+          }
+        ]
+      },
+      "id": "31f4f4c4-ac29-5a1d-bf67-9403c9b8dde9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

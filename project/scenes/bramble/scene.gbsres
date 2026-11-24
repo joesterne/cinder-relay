@@ -1,0 +1,101 @@
+{
+  "_resourceType": "scene",
+  "id": "04e146dd-4faa-4c44-b88b-cb230e876837",
+  "_index": 37,
+  "type": "TOPDOWN",
+  "name": "Bramble / kennel",
+  "symbol": "scene_bramble",
+  "x": 0,
+  "y": 2520,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d5ad19c3-23f2-4000-9c36-7de412a98f8e",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d5d5441a-faec-440b-ba86-6ff6858a15fa"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "4e96899d-0d6d-4a59-b86c-f2a0d5706318",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "9f1a5c2e-4ced-4d46-84e3-eed0a323d6aa",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "e7a22006-b18b-444a-9c4a-f92e99e6604f",
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "0",
+        "items": 2,
+        "layout": "dialogue",
+        "cancelOnB": true,
+        "cancelOnLastOption": false,
+        "option1": "Take Bramble",
+        "option2": "Back to kennel"
+      }
+    },
+    {
+      "id": "9c87bfa1-aeae-4f94-ab30-9003a54b40f4",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "0",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "0c5010ef-5e4a-4d74-a1d0-e440d1b916e1",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "5",
+              "operation": "set",
+              "other": "val",
+              "value": 3
+            }
+          },
+          {
+            "id": "81dbdcb3-eaa4-48f0-b108-8c897adbea0b",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Bramble takes\npoint on the trail."
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "6cfb21be-3cb1-4026-8e84-4b758bc96f03",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "319c5b01-5338-58dd-a9b6-01f7dfc64470",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

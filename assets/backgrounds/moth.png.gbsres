@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "fa133f02-84bf-5e4b-a7e3-d1093d8594bf",
+  "name": "GLASSWING",
+  "symbol": "bg_moth",
+  "tileColors": "",
+  "filename": "moth.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

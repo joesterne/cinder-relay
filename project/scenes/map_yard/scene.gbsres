@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "8c361361-8d33-5e0a-a1ff-36fadff6e9bb",
+  "_index": 24,
+  "type": "TOPDOWN",
+  "name": "Valley Map / THE SWITCHYARD",
+  "symbol": "scene_map_yard",
+  "x": 230,
+  "y": 1550,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "4179c70f-25df-501b-8487-90b24c78c195",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "fab1ecf6-7da4-5055-ba13-9bf3c4afed3f",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "92eb1881-0315-5fa2-b4ef-0549efa668b0",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "458018b9-eb33-5e42-8b09-fbac57079c75",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "241b76fb-f8df-5ae6-864b-83e2aa29be06",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "aa1cba42-3fed-5cfc-9ac5-51c26beb87b4",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "45664e1b-3980-588e-aefe-635b6f8db643",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

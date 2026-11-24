@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8d823b5e-443c-54fb-b97c-40615afdcafa",
+  "name": "KILN POST",
+  "symbol": "bg_kiln",
+  "tileColors": "",
+  "filename": "kiln.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

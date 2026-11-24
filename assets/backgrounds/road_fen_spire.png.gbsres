@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "899b9384-feec-5eef-b224-a250fa4d6df2",
+  "name": "Walk to Salt Spire",
+  "symbol": "bg_road_fen_spire",
+  "tileColors": "",
+  "filename": "road_fen_spire.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

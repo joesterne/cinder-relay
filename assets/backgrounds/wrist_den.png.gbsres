@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d9a6a23e-1538-5caf-b06c-ca3406f25952",
+  "name": "Wrist terminal / den",
+  "symbol": "bg_wrist_den",
+  "tileColors": "00154+022f+016+02e+016+02e+016+02e+016+0293+",
+  "filename": "wrist_den.png",
+  "width": 20,
+  "height": 30,
+  "imageWidth": 160,
+  "imageHeight": 240,
+  "autoColor": false
+}

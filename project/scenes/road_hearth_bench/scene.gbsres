@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "24679b9c-dffe-5e99-a7ee-de313d1e354e",
+  "_index": 15,
+  "type": "TOPDOWN",
+  "name": "Walk to The Workbench",
+  "symbol": "scene_road_hearth_bench",
+  "x": 0,
+  "y": 940,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e94ebe53-e154-5b58-837c-ef11f9e0b2bf",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "9a02aada-1685-5445-8f70-2bc97fd1d2eb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "3ffd9e22-6f87-48fe-93b0-4569f0fe9da5",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9b411be6-9ed3-4f0f-a992-f4e75aab99d0",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "c0c99fe0-203d-4b51-a2e6-878b2516c936",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "4c65bc82-837c-53df-95ba-31d6164fb57f",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "b11b3fb3-03e1-53fe-b879-c988a23a6c47",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "593dbe57-77f0-5f0e-8068-4059f3e05466",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "a5fc90dd-ae7c-5d64-9a84-17a93a3541f2",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 17
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "2cd10ff9-cc13-5653-9d65-b699cc83aa85",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "80d3f631-887d-5137-9a22-5a6bf65cb2e8",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

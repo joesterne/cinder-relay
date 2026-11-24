@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "79b3c45f-03d6-5118-a976-ea52ffa665c9",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Walk to Hearth Well",
+  "symbol": "scene_road_fen_hearth",
+  "x": 460,
+  "y": 720,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "cb34ac56-697d-59b5-8e42-4a7a9d2f1771",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "093b325d-cfb1-5023-9042-12373a196422"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "8c699ee8-85f2-48ed-997b-439e872560d0",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "8b54a4e0-a7bf-4ac0-aa2d-c1261c04a1c9",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "2958ceb3-02bc-4018-8889-3541fe8a8cd1",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "de49ab27-206c-5726-9040-f08fd0fa11fa",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "e0286127-cd08-5ce8-b56b-6beeb3c3275a",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "3139f8a6-1ad2-5e0e-afdd-8bb4512ec72a",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "b67a08d6-6fce-5ba3-a6f8-200ea57c3fb4",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "9a8decc9-2196-5d26-95fd-077dece97891",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6c35d04c-e1e4-52fe-aa6f-4070a40c5e72",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

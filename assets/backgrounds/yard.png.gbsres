@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a01f7ce6-8201-5d72-a99b-9de24071f44c",
+  "name": "THE SWITCHYARD",
+  "symbol": "bg_yard",
+  "tileColors": "",
+  "filename": "yard.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

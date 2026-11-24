@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d5ad19c3-23f2-4000-9c36-7de412a98f8e",
+  "name": "Bramble",
+  "symbol": "bg_bramble",
+  "tileColors": "",
+  "filename": "bramble.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

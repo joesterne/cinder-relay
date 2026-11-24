@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d9c5e040-8e9e-5e30-ab3c-51fda9f21227",
+  "name": "Walk to Hearth Well",
+  "symbol": "bg_road_den_hearth",
+  "tileColors": "",
+  "filename": "road_den_hearth.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

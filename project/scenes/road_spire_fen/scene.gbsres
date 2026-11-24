@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "d7acd7cd-0aaa-52f0-a73d-887b9ce65cc9",
+  "_index": 20,
+  "type": "TOPDOWN",
+  "name": "Walk to Glass Marsh",
+  "symbol": "scene_road_spire_fen",
+  "x": 230,
+  "y": 1160,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e902ad1e-22a4-5e52-ba2e-2a99c20313c8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d39452a1-e55c-53b3-a482-5affec4204d3"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "d7cba345-ea67-48cd-9c95-fb6e8ab2b764",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d3d9a28f-ddf1-4c15-a43e-10fd68430752",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "40f04646-d45e-4481-901b-201927578687",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "3ec6c300-0703-5a5b-b0cc-ada7edbb7d74",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "cb51a096-5baf-547a-82e8-93a5bf191f1f",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "9b0d1b4f-b8d9-53e3-851d-b591025b6730",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "84737e9d-9b12-579e-97f8-48d17c793be6",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "a0bffb2c-c74e-594f-8f29-481d1901622a",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a4d0a0a8-4603-5e1e-a4fe-a775450da997",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

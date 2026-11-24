@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "112efb95-89b7-59e0-bf90-487497e6c073",
+  "_index": 27,
+  "type": "TOPDOWN",
+  "name": "Valley Map / SALT SPIRE",
+  "symbol": "scene_map_spire",
+  "x": 0,
+  "y": 1770,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "96ba9015-e6bb-5536-95a0-019ae1caf8ce",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "85f31944-29a5-53d9-b988-ab5e8ee14a39"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "9db37857-ffee-58b8-a86a-bd832fbcc738",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "a5a8641c-85ae-596b-be4e-8ab375e01966",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "c8751d36-e6a5-541a-b176-a7e9223faee7",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "8e490ca4-ddbf-5145-9877-dbc122734d4f",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
+      "id": "d4660529-2bff-5837-bd18-5ba4f26d7e78",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "bca41118-ca8b-57e9-8b76-4c5341bd9e18",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

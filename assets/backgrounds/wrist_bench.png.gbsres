@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "413ae259-0956-508a-8cd2-e10f28780d2e",
+  "name": "Wrist terminal / bench",
+  "symbol": "bg_wrist_bench",
+  "tileColors": "00154+022f+016+02e+016+02e+016+02e+016+0293+",
+  "filename": "wrist_bench.png",
+  "width": 20,
+  "height": 30,
+  "imageWidth": 160,
+  "imageHeight": 240,
+  "autoColor": false
+}

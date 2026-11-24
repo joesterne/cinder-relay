@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "88ca883c-5d68-5fba-b555-9299c550d2da",
+  "name": "Wrist terminal / hearth",
+  "symbol": "bg_wrist_hearth",
+  "tileColors": "00154+022f+016+02e+016+02e+016+02e+016+0293+",
+  "filename": "wrist_hearth.png",
+  "width": 20,
+  "height": 30,
+  "imageWidth": 160,
+  "imageHeight": 240,
+  "autoColor": false
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8f15087e-48bf-5d22-a911-8972ca578bab",
+  "name": "Relay Valley / fen",
+  "symbol": "bg_map_fen",
+  "tileColors": "",
+  "filename": "map_fen.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

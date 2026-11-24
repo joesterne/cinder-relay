@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "b7b074db-e0d0-5902-bfd7-a3854a402edd",
+  "name": "CINDER RELAY",
+  "symbol": "bg_title",
+  "tileColors": "",
+  "filename": "title.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

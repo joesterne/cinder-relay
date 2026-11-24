@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "fc71ef4a-1f40-5683-80af-3fc6fcbf23f0",
+  "_index": 14,
+  "type": "TOPDOWN",
+  "name": "Walk to Salt Spire",
+  "symbol": "scene_road_fen_spire",
+  "x": 690,
+  "y": 720,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "899b9384-feec-5eef-b224-a250fa4d6df2",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5d18c8b7-7dd1-5ce1-8f89-1dac94c39a1d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "9b786c4c-c7fb-4697-b954-409aaf307231",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "5",
+        "operator": "==",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "b030145e-4bac-4969-a6bb-564ee7721eb0",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "34f6b4cd-f5ae-420e-956f-c316aa642d6e"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "38d85345-9cb8-47c6-932d-c5df30b51fc0",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "8dfa08ce-5e73-5c05-bcaf-a5e1bae29772",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "8981e732-bec6-533e-a8c4-98c5e19dea17",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 3
+      }
+    },
+    {
+      "id": "1512f9b1-e78b-5b3d-88a8-0d0d98057c7a",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "d33f5cbd-e6ce-51ec-8e99-864df091a3a0",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 17
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "units": "tiles",
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      }
+    },
+    {
+      "id": "3dcd9897-be8b-56ff-b806-58e0f2688e26",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1056dc0c-77d5-50cd-bf5e-27fbdeab1416",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}
