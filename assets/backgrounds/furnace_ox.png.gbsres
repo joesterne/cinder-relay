@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8b1ac491-bef8-43b4-b059-3a0a0b0472e4",
+  "name": "Furnace Ox",
+  "symbol": "bg_furnace_ox",
+  "tileColors": "",
+  "filename": "furnace_ox.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

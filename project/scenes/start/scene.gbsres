@@ -19,6 +19,23 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "id": "e9a38e86-42a2-464e-b141-e2feedd43c4f",
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "8978acf6-6c98-47c8-9adf-a34fb3f57a1e"
+      }
+    },
+    {
+      "id": "417e33f9-15c3-4aa0-ba1e-2ea4c10f9017",
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "76",
+        "operation": "set",
+        "other": "val",
+        "value": 1
+      }
+    },
+    {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
         "actorId": "player"

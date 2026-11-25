@@ -180,6 +180,211 @@
       "id": "35",
       "name": "Field kit healing",
       "symbol": "var_field_kit_healing"
+    },
+    {
+      "id": "36",
+      "name": "Radio forecast heard",
+      "symbol": "var_radio_forecast_heard"
+    },
+    {
+      "id": "37",
+      "name": "Collar tag examined",
+      "symbol": "var_collar_tag_examined"
+    },
+    {
+      "id": "38",
+      "name": "Lunch tin found",
+      "symbol": "var_lunch_tin_found"
+    },
+    {
+      "id": "39",
+      "name": "Secrets found",
+      "symbol": "var_secrets_found"
+    },
+    {
+      "id": "40",
+      "name": "RustclawOwned",
+      "symbol": "var_rustclawowned"
+    },
+    {
+      "id": "41",
+      "name": "RustclawAtk",
+      "symbol": "var_rustclawatk"
+    },
+    {
+      "id": "42",
+      "name": "RustclawHP",
+      "symbol": "var_rustclawhp"
+    },
+    {
+      "id": "43",
+      "name": "AshcrowOwned",
+      "symbol": "var_ashcrowowned"
+    },
+    {
+      "id": "44",
+      "name": "AshcrowAtk",
+      "symbol": "var_ashcrowatk"
+    },
+    {
+      "id": "45",
+      "name": "AshcrowHP",
+      "symbol": "var_ashcrowhp"
+    },
+    {
+      "id": "46",
+      "name": "VoltfinOwned",
+      "symbol": "var_voltfinowned"
+    },
+    {
+      "id": "47",
+      "name": "VoltfinAtk",
+      "symbol": "var_voltfinatk"
+    },
+    {
+      "id": "48",
+      "name": "VoltfinHP",
+      "symbol": "var_voltfinhp"
+    },
+    {
+      "id": "49",
+      "name": "Rivetbat Owned",
+      "symbol": "var_rivetbat_owned"
+    },
+    {
+      "id": "50",
+      "name": "Rivetbat Atk",
+      "symbol": "var_rivetbat_atk"
+    },
+    {
+      "id": "51",
+      "name": "Rivetbat HP",
+      "symbol": "var_rivetbat_hp"
+    },
+    {
+      "id": "52",
+      "name": "Spoolasp Owned",
+      "symbol": "var_spoolasp_owned"
+    },
+    {
+      "id": "53",
+      "name": "Spoolasp Atk",
+      "symbol": "var_spoolasp_atk"
+    },
+    {
+      "id": "54",
+      "name": "Spoolasp HP",
+      "symbol": "var_spoolasp_hp"
+    },
+    {
+      "id": "55",
+      "name": "Cokemole Owned",
+      "symbol": "var_cokemole_owned"
+    },
+    {
+      "id": "56",
+      "name": "Cokemole Atk",
+      "symbol": "var_cokemole_atk"
+    },
+    {
+      "id": "57",
+      "name": "Cokemole HP",
+      "symbol": "var_cokemole_hp"
+    },
+    {
+      "id": "58",
+      "name": "Reedhart Owned",
+      "symbol": "var_reedhart_owned"
+    },
+    {
+      "id": "59",
+      "name": "Reedhart Atk",
+      "symbol": "var_reedhart_atk"
+    },
+    {
+      "id": "60",
+      "name": "Reedhart HP",
+      "symbol": "var_reedhart_hp"
+    },
+    {
+      "id": "61",
+      "name": "Siltnewt Owned",
+      "symbol": "var_siltnewt_owned"
+    },
+    {
+      "id": "62",
+      "name": "Siltnewt Atk",
+      "symbol": "var_siltnewt_atk"
+    },
+    {
+      "id": "63",
+      "name": "Siltnewt HP",
+      "symbol": "var_siltnewt_hp"
+    },
+    {
+      "id": "64",
+      "name": "Bogbell Owned",
+      "symbol": "var_bogbell_owned"
+    },
+    {
+      "id": "65",
+      "name": "Bogbell Atk",
+      "symbol": "var_bogbell_atk"
+    },
+    {
+      "id": "66",
+      "name": "Bogbell HP",
+      "symbol": "var_bogbell_hp"
+    },
+    {
+      "id": "67",
+      "name": "Furnace Ox Owned",
+      "symbol": "var_furnace_ox_owned"
+    },
+    {
+      "id": "68",
+      "name": "Furnace Ox Atk",
+      "symbol": "var_furnace_ox_atk"
+    },
+    {
+      "id": "69",
+      "name": "Furnace Ox HP",
+      "symbol": "var_furnace_ox_hp"
+    },
+    {
+      "id": "70",
+      "name": "Mire Crown Owned",
+      "symbol": "var_mire_crown_owned"
+    },
+    {
+      "id": "71",
+      "name": "Mire Crown Atk",
+      "symbol": "var_mire_crown_atk"
+    },
+    {
+      "id": "72",
+      "name": "Mire Crown HP",
+      "symbol": "var_mire_crown_hp"
+    },
+    {
+      "id": "73",
+      "name": "Stormray Owned",
+      "symbol": "var_stormray_owned"
+    },
+    {
+      "id": "74",
+      "name": "Stormray Atk",
+      "symbol": "var_stormray_atk"
+    },
+    {
+      "id": "75",
+      "name": "Stormray HP",
+      "symbol": "var_stormray_hp"
+    },
+    {
+      "id": "76",
+      "name": "Current music cue",
+      "symbol": "var_current_music_cue"
     }
   ],
   "constants": []

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a0725d2c-9d2a-488a-bf23-d255ed6cfaf9",
+  "name": "Mire Crown",
+  "symbol": "bg_mire_crown",
+  "tileColors": "",
+  "filename": "mire_crown.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

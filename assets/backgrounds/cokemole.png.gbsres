@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ea7a2486-1c07-45ba-b22e-d3efe024d2ee",
+  "name": "Cokemole",
+  "symbol": "bg_cokemole",
+  "tileColors": "",
+  "filename": "cokemole.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

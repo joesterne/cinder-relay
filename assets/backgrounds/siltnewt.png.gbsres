@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "baf36ab2-a908-440c-957d-f04e2c599aeb",
+  "name": "Siltnewt",
+  "symbol": "bg_siltnewt",
+  "tileColors": "",
+  "filename": "siltnewt.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

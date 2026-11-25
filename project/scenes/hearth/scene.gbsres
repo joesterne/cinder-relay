@@ -19,6 +19,37 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "id": "9bf0f210-3b50-450a-bf56-ca27a1a68d1c",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "76",
+        "operator": "!=",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "e9f7f369-7bb2-4d55-b6fc-e4f7b52ee1ab",
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "8978acf6-6c98-47c8-9adf-a34fb3f57a1e"
+            }
+          },
+          {
+            "id": "5d8ee765-c8ad-4073-ae8a-f061d39df08f",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "76",
+              "operation": "set",
+              "other": "val",
+              "value": 1
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
       "id": "da3cfb20-5ca8-42e5-9542-598fec5b0ed0",
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
@@ -238,7 +269,7 @@
                                               {
                                                 "command": "EVENT_TEXT",
                                                 "args": {
-                                                  "text": "Kiln  $13$/1\nSpire $14$/1"
+                                                  "text": "Kiln  $13$/1\nSpire $14$/1\nSecrets $39$/3"
                                                 },
                                                 "id": "c71724b6-6e57-5f63-ad32-ab2a94d0c252"
                                               }

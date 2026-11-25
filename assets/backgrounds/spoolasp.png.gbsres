@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "75853959-a1e7-4087-ada2-e934b81f7f2a",
+  "name": "Spoolasp",
+  "symbol": "bg_spoolasp",
+  "tileColors": "",
+  "filename": "spoolasp.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

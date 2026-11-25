@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "35d15136-5d57-47d7-9132-46d923720487",
+  "name": "Stormray",
+  "symbol": "bg_stormray",
+  "tileColors": "",
+  "filename": "stormray.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

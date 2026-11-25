@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3e518bca-ef37-4d89-a8d8-c4e7adc9978c",
+  "name": "Ashcrow",
+  "symbol": "bg_ashcrow",
+  "tileColors": "",
+  "filename": "ashcrow.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

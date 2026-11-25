@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e3fd5908-0991-45e6-9d32-274cc6e1b59c",
+  "name": "Rivetbat",
+  "symbol": "bg_rivetbat",
+  "tileColors": "",
+  "filename": "rivetbat.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

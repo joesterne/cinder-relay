@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "b4d4961c-1ec1-4379-a295-f97a9b08e5c8",
+  "name": "Bogbell",
+  "symbol": "bg_bogbell",
+  "tileColors": "",
+  "filename": "bogbell.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

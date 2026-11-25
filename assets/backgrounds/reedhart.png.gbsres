@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "457df0a2-1b8d-40ee-98ab-6c5acbfa1fed",
+  "name": "Reedhart",
+  "symbol": "bg_reedhart",
+  "tileColors": "",
+  "filename": "reedhart.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

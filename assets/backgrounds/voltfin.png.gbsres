@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ad7d5c93-cfa7-489b-8b23-b0324ed72676",
+  "name": "Voltfin",
+  "symbol": "bg_voltfin",
+  "tileColors": "",
+  "filename": "voltfin.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

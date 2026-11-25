@@ -33,40 +33,138 @@
       }
     },
     {
-      "id": "458018b9-eb33-5e42-8b09-fbac57079c75",
-      "command": "EVENT_AWAIT_INPUT",
-      "args": {
-        "input": [
-          "a",
-          "b"
+      "id": "579b8f61-de6e-4d50-af3a-cd7c5dae3a22",
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "id": "458018b9-eb33-5e42-8b09-fbac57079c75",
+            "command": "EVENT_AWAIT_INPUT",
+            "args": {
+              "input": [
+                "a",
+                "b",
+                "start"
+              ]
+            }
+          },
+          {
+            "id": "dc338591-9c34-4b5f-9e7e-82646911f282",
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": [
+                "start"
+              ]
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "f83dbfd0-ffc1-420a-a374-9dc1514e5c8a",
+                  "command": "EVENT_IF_VALUE",
+                  "args": {
+                    "variable": "36",
+                    "operator": "==",
+                    "comparator": 0
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "1749a61f-ec2b-4ab5-bb02-e7ea9acdb92a",
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "36",
+                          "operation": "set",
+                          "other": "val",
+                          "value": 1
+                        }
+                      },
+                      {
+                        "id": "c9d98598-482d-4d75-b3e1-a88c4b485ecf",
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "39",
+                          "operation": "add",
+                          "other": "val",
+                          "value": 1
+                        }
+                      },
+                      {
+                        "id": "261cdaba-d1ea-4018-8106-4175856f19aa",
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "4",
+                          "operation": "add",
+                          "other": "val",
+                          "value": 1
+                        }
+                      },
+                      {
+                        "id": "2aadca2d-2aa2-4ad1-84c6-20d000c6c7df",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Rail Radio 7.\nToday: dry.\nTomorrow: dust."
+                        }
+                      },
+                      {
+                        "id": "754d12ad-86d1-4fa3-9e60-51c8497479d0",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Forecast valid\nfor 200 years."
+                        }
+                      },
+                      {
+                        "id": "08671682-fdb3-4a31-b18f-8476df2f731b",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "A lost core sits\nunder the dial."
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "f2e8c740-48f2-4467-9759-9c410fb37508",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Rail Radio 7.\nStill dust."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "241b76fb-f8df-5ae6-864b-83e2aa29be06",
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "28",
+                    "operation": "set",
+                    "other": "val",
+                    "value": 1
+                  }
+                },
+                {
+                  "id": "aa1cba42-3fed-5cfc-9ac5-51c26beb87b4",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "45664e1b-3980-588e-aefe-635b6f8db643",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 24
+                    },
+                    "direction": "down",
+                    "fadeSpeed": 1
+                  }
+                }
+              ]
+            }
+          }
         ]
-      }
-    },
-    {
-      "id": "241b76fb-f8df-5ae6-864b-83e2aa29be06",
-      "command": "EVENT_VARIABLE_MATH",
-      "args": {
-        "vectorX": "28",
-        "operation": "set",
-        "other": "val",
-        "value": 1
-      }
-    },
-    {
-      "id": "aa1cba42-3fed-5cfc-9ac5-51c26beb87b4",
-      "command": "EVENT_SWITCH_SCENE",
-      "args": {
-        "sceneId": "45664e1b-3980-588e-aefe-635b6f8db643",
-        "x": {
-          "type": "number",
-          "value": 0
-        },
-        "y": {
-          "type": "number",
-          "value": 24
-        },
-        "direction": "down",
-        "fadeSpeed": 1
       }
     }
   ],

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "35c96f2f-d95a-4f83-89b8-00e4648c7362",
+  "name": "Rustclaw",
+  "symbol": "bg_rustclaw",
+  "tileColors": "",
+  "filename": "rustclaw.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

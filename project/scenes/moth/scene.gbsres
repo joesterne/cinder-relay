@@ -19,6 +19,37 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "id": "2438e83d-57f7-4b22-b08e-44f3c551b137",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "76",
+        "operator": "!=",
+        "comparator": 2
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ddff1009-c6ae-4115-a182-91ef9a7186e0",
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "3b40782b-d56d-484a-bd5f-9cebdb34c29f"
+            }
+          },
+          {
+            "id": "a80f3c24-e4e9-40a5-b53f-e47818f27375",
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "76",
+              "operation": "set",
+              "other": "val",
+              "value": 2
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
         "actorId": "player"
@@ -204,205 +235,11 @@
                         "id": "37d17957-2a99-5c14-ade3-8461e80aa839"
                       },
                       {
-                        "command": "EVENT_IF_VALUE",
+                        "id": "db90b3ae-4b49-4084-abdd-1fbc4d85e0d7",
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
                         "args": {
-                          "variable": "5",
-                          "operator": "==",
-                          "comparator": 0
-                        },
-                        "children": {
-                          "true": [
-                            {
-                              "command": "EVENT_IF_VALUE",
-                              "args": {
-                                "variable": "20",
-                                "operator": "<",
-                                "comparator": 12
-                              },
-                              "children": {
-                                "true": [
-                                  {
-                                    "command": "EVENT_VARIABLE_MATH",
-                                    "args": {
-                                      "vectorX": "20",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "value": 1
-                                    },
-                                    "id": "8271842a-0e10-5590-8a43-c86af524d921"
-                                  },
-                                  {
-                                    "command": "EVENT_TEXT",
-                                    "args": {
-                                      "text": "Victory!\nPartner ATK +1.\nSalvage +2."
-                                    },
-                                    "id": "12d52eeb-eb01-592c-b759-6f6a4ab83935"
-                                  }
-                                ],
-                                "false": [
-                                  {
-                                    "command": "EVENT_TEXT",
-                                    "args": {
-                                      "text": "Victory!\nSalvage +2."
-                                    },
-                                    "id": "113ad5b8-67d5-51fa-93d1-9fcb026514b9"
-                                  }
-                                ]
-                              },
-                              "id": "884c29e3-7d80-594b-8793-a2df6aeccd36"
-                            }
-                          ],
-                          "false": [
-                            {
-                              "command": "EVENT_IF_VALUE",
-                              "args": {
-                                "variable": "5",
-                                "operator": "==",
-                                "comparator": 1
-                              },
-                              "children": {
-                                "true": [
-                                  {
-                                    "command": "EVENT_IF_VALUE",
-                                    "args": {
-                                      "variable": "23",
-                                      "operator": "<",
-                                      "comparator": 12
-                                    },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_VARIABLE_MATH",
-                                          "args": {
-                                            "vectorX": "23",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "value": 1
-                                          },
-                                          "id": "867e9565-3d9f-5df4-b82e-50bc7d6fffd6"
-                                        },
-                                        {
-                                          "command": "EVENT_TEXT",
-                                          "args": {
-                                            "text": "Victory!\nPartner ATK +1.\nSalvage +2."
-                                          },
-                                          "id": "03b75be1-5af9-5548-aa49-a30f92b15ae7"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_TEXT",
-                                          "args": {
-                                            "text": "Victory!\nSalvage +2."
-                                          },
-                                          "id": "1b1b7cfa-5b05-551c-bb0a-99de66882983"
-                                        }
-                                      ]
-                                    },
-                                    "id": "24a5a282-fc25-5444-958c-9d55bdfeda20"
-                                  }
-                                ],
-                                "false": [
-                                  {
-                                    "id": "c185bf56-c52f-4099-b4fc-35c04f0f46f9",
-                                    "command": "EVENT_IF_VALUE",
-                                    "args": {
-                                      "variable": "5",
-                                      "operator": "==",
-                                      "comparator": 3
-                                    },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_IF_VALUE",
-                                          "args": {
-                                            "variable": "29",
-                                            "operator": "<",
-                                            "comparator": 12
-                                          },
-                                          "children": {
-                                            "true": [
-                                              {
-                                                "command": "EVENT_VARIABLE_MATH",
-                                                "args": {
-                                                  "vectorX": "29",
-                                                  "operation": "add",
-                                                  "other": "val",
-                                                  "value": 1
-                                                },
-                                                "id": "85dffc9e-f4ee-43ed-bf90-7aa39d8972dc"
-                                              },
-                                              {
-                                                "command": "EVENT_TEXT",
-                                                "args": {
-                                                  "text": "Victory!\nPartner ATK +1.\nSalvage +2."
-                                                },
-                                                "id": "ba126895-ab35-42a7-ba7b-73217ee7b7c7"
-                                              }
-                                            ],
-                                            "false": [
-                                              {
-                                                "command": "EVENT_TEXT",
-                                                "args": {
-                                                  "text": "Victory!\nSalvage +2."
-                                                },
-                                                "id": "5a855abf-377e-4d7b-b087-dced5251fef1"
-                                              }
-                                            ]
-                                          },
-                                          "id": "28950534-c2b3-4b7a-90d3-623306ccf16d"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_IF_VALUE",
-                                          "args": {
-                                            "variable": "26",
-                                            "operator": "<",
-                                            "comparator": 12
-                                          },
-                                          "children": {
-                                            "true": [
-                                              {
-                                                "command": "EVENT_VARIABLE_MATH",
-                                                "args": {
-                                                  "vectorX": "26",
-                                                  "operation": "add",
-                                                  "other": "val",
-                                                  "value": 1
-                                                },
-                                                "id": "edc2facd-3cd4-5418-af5c-6f4e1b37ffce"
-                                              },
-                                              {
-                                                "command": "EVENT_TEXT",
-                                                "args": {
-                                                  "text": "Victory!\nPartner ATK +1.\nSalvage +2."
-                                                },
-                                                "id": "5639cf46-89e3-576e-9c0c-8e57d0183419"
-                                              }
-                                            ],
-                                            "false": [
-                                              {
-                                                "command": "EVENT_TEXT",
-                                                "args": {
-                                                  "text": "Victory!\nSalvage +2."
-                                                },
-                                                "id": "a8654fe9-9dc9-5671-8f4b-b236e9c5c2f2"
-                                              }
-                                            ]
-                                          },
-                                          "id": "215eb25c-f3c5-5daf-add9-f1e8f04e56a8"
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
-                              },
-                              "id": "edfef619-1eb6-5af2-a681-05f6f2508d38"
-                            }
-                          ]
-                        },
-                        "id": "24c03da4-4cce-5ab7-bc77-cbf3c13905e5"
+                          "customEventId": "b8321864-b71e-43e5-98f4-02fdd225e520"
+                        }
                       },
                       {
                         "id": "dd493b0b-93c9-4bc2-af65-7f78b7682fd4",
