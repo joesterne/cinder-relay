@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "0f79e605-89a1-40ea-a2cb-9899eb92fcb6",
+  "name": "RELAY ECHO",
+  "symbol": "bg_echo",
+  "tileColors": "",
+  "filename": "echo.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

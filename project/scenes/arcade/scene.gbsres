@@ -1,0 +1,140 @@
+{
+  "_resourceType": "scene",
+  "id": "090a27a0-bbf9-4500-a022-acfe9cac35b9",
+  "_index": 50,
+  "type": "TOPDOWN",
+  "name": "WELL ARCADE",
+  "symbol": "scene_arcade",
+  "x": 0,
+  "y": 4050,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "464c3000-137b-447c-8439-53a287301cf8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "093b325d-cfb1-5023-9042-12373a196422"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "85a22fe9-1894-4761-b819-b6bf2f18c412",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "33aa273a-4199-4993-829c-e93ce267b165",
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      }
+    },
+    {
+      "id": "df174fbd-1d04-4fe1-b978-f0b336a7541e",
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "94324dd4-bdba-53b7-8de4-fa53e12683d9"
+      }
+    },
+    {
+      "id": "27576a8a-a520-4c54-9b37-130f48c6d41c",
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "0",
+        "items": 3,
+        "layout": "dialogue",
+        "cancelOnB": true,
+        "cancelOnLastOption": false,
+        "option1": "Salvage crane",
+        "option2": "Relay echo",
+        "option3": "Return home"
+      }
+    },
+    {
+      "id": "db7921bb-f37d-47c1-b6ac-eb61b6f39cba",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "0",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d2683dd3-fb81-4cff-af06-ace43284dada",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "18250c21-c315-4845-b3d7-cc85b4786454",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "down",
+              "fadeSpeed": 1
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "0b276dfb-b8af-4af1-8994-ba96beac14c5",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "0",
+        "operator": "==",
+        "comparator": 2
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f93bbc23-fa87-4919-9bd5-386a32dfe396",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d7b3f8f5-bc6a-4370-9cc2-6ec7cb4a2d8d",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "down",
+              "fadeSpeed": 1
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "1065c1c6-0808-49de-aabb-824bf9996f08",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6c35d04c-e1e4-52fe-aa6f-4070a40c5e72",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "down",
+        "fadeSpeed": 1
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f51+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

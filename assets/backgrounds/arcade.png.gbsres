@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "464c3000-137b-447c-8439-53a287301cf8",
+  "name": "WELL ARCADE",
+  "symbol": "bg_arcade",
+  "tileColors": "",
+  "filename": "arcade.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

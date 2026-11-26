@@ -79,16 +79,48 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "0",
-              "items": 4,
+              "items": 5,
               "layout": "dialogue",
               "cancelOnB": true,
               "cancelOnLastOption": false,
-              "option1": "Leave the well",
+              "option1": "Wasteland",
               "option2": "Kennel",
               "option3": "Workbench",
-              "option4": "Logbook"
+              "option4": "Logbook",
+              "option5": "Arcade"
             },
             "id": "38883b5d-5b3b-5431-9882-cebf5688152d"
+          },
+          {
+            "id": "06dcb1ad-d499-4134-b623-7717c7b5aa8b",
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "0",
+              "operator": "==",
+              "comparator": 5
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "9802d367-06a9-4766-98d9-8f6bd0564f0e",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "090a27a0-bbf9-4500-a022-acfe9cac35b9",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "down",
+                    "fadeSpeed": 1
+                  }
+                }
+              ],
+              "false": []
+            }
           },
           {
             "id": "9ca6bd15-a968-527e-87b4-249cba1c921e",

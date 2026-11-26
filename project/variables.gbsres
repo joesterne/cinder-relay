@@ -385,6 +385,41 @@
       "id": "76",
       "name": "Current music cue",
       "symbol": "var_current_music_cue"
+    },
+    {
+      "id": "77",
+      "name": "Crane position",
+      "symbol": "var_crane_position"
+    },
+    {
+      "id": "78",
+      "name": "Crane velocity",
+      "symbol": "var_crane_velocity"
+    },
+    {
+      "id": "79",
+      "name": "Cabinet latch",
+      "symbol": "var_cabinet_latch"
+    },
+    {
+      "id": "80",
+      "name": "Cabinet score",
+      "symbol": "var_cabinet_score"
+    },
+    {
+      "id": "81",
+      "name": "Echo first",
+      "symbol": "var_echo_first"
+    },
+    {
+      "id": "82",
+      "name": "Echo second",
+      "symbol": "var_echo_second"
+    },
+    {
+      "id": "83",
+      "name": "Echo third",
+      "symbol": "var_echo_third"
     }
   ],
   "constants": []

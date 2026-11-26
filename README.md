@@ -21,6 +21,10 @@ To save, return to **Hearth Well → Logbook → Save expedition**. Choose **Con
 3. **Track a creature.** Read its next attack before choosing your move. Brace reduces the incoming hit to one damage and adds three power to your next Strike. To catch a new species, weaken it to four HP or less and use a loop. Gentle nip leaves at least one HP.
 4. **Follow the relay signal.** Defeat the keeper at Kiln Post to open the marsh gate. The second keeper waits at Salt Spire. Claimed posts supply field kits.
 
+## Hearth Well arcade
+
+Choose **Arcade** at Hearth Well for two free, repeatable minigames. In **Salvage Crane**, press A as the hook passes over the marked crate. Land at least two of three lifts to earn two scrap. In **Relay Echo**, watch the pointer above the bolt, drop, and gear pads, then select the three signals in order to earn a capture loop. B exits during a crane sweep or an echo answer menu.
+
 ## Deep tracks and apex dens
 
 At Hearth Well, Coiljack starts on your team and Bramble waits in the kennel. On the trail, choose **Track creature** to look for these species.

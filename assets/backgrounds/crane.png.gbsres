@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "82bbbcea-5f23-4e92-981e-d583ca582276",
+  "name": "SALVAGE CRANE",
+  "symbol": "bg_crane",
+  "tileColors": "",
+  "filename": "crane.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}
